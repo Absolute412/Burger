@@ -1,0 +1,38 @@
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.switch { 
+  width: 32px;
+  height: 16px;
+  border: 1px solid #d62300;
+  background-color: #502314;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  margin-left: 1rem;
+  margin-top: 4px;
+  transition: background-color 0.3s ;
+}
+
+.switch.on {
+  background-color: #d62300;
+}
+
+.switch-handle {
+  width: 12px;
+  height: 12px;
+  background-color: #d62300;
+  border-radius: 50%;
+  position: absolute;
+  top: 1.5px;
+  left: 2px;
+  transition: trasform 0.3s;
+}
+
+.switch.on .switch-handle {
+  transform: translateX(15px);
+  background-color: white;
+}
